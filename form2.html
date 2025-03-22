@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- bisa method get|post -->
+    <form action="https://localhost:5500" method="get">
+      <table>
+        <tr>
+          <td><label>Masukan nama anda</label></td>
+          <td><input type="text" name="nama" /></td>
+        </tr>
+        <tr>
+          <td><label>Masukan Alamat</label></td>
+          <td><input type="text" name="alamat" /></td>
+        </tr>
+        <tr>
+          <td><label>Masukan Email</label></td>
+          <td><input type="email" name="email" /></td>
+        </tr>
+        <tr>
+          <td><label>Nomor HP</label></td>
+          <td><input type="number" name="no hp" /></td>
+        </tr>
+        <tr>
+          <td><label>Jumlah Anggota Keluarga</label></td>
+          <td><input type="number" name="jmlhklg" /></td>
+        </tr>
+        <tr>
+          <td><label>Pilih Jenis Kelamin</label></td>
+          <td>
+            <input type="radio" name="jk" value="laki-laki" /> Laki-laki
+            <input type="radio" name="jk" value="perempuan" /> Perempuan
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Tanggal lahir</label></td>
+          <td><input type="date" /></td>
+        </tr>
+        <tr>
+          <td><label for="">Pilih jurusan tujan</label></td>
+          <td>
+            <input type="checkbox" name="jurusan" value="ilkom" />Ilkom
+            <input type="checkbox" name="jurusan" value="TI" /> TI
+            <input type="checkbox" name="jurusan" value="TS" /> TSipil
+          </td>
+        </tr>
+        <tr>
+          <td><label>Alamat</label></td>
+          <td><textarea name="alamat" cols="30" rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td><label>Pekerjaan orang tua</label></td>
+          <td>
+            <select name="pekerjaan_ortu">
+              <option value="PNS">Pegawai negri sipil</option>
+              <option value="Swasta">Swasta</option>
+              <option value="Pensiunan">Pensiunan</option>
+              <option value="Wiraswasta">Wiraswasta</option>
+              <option value="TNI/Polri">TNI/Polri</option>
+              <option value="Pengusaha">Pengusaha</option>
+              <option value="Lain-lain">Lain-lain</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="left">
+            <input type="submit" value="kirim" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

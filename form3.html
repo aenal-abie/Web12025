@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Nilai Mahasiswa</title>
+  </head>
+  <body>
+    <h1>Form Input Nilai Mahasiswa</h1>
+    <form action="#" method="post">
+      <table border="1">
+        <tr>
+          <th>No</th>
+          <th>Nama Mahasiswa</th>
+          <th>Nilai</th>
+        </tr>
+        <!-- Loop to generate input fields for 100 students -->
+        <!-- Repeat the following block 100 times -->
+        <!-- Example for one student -->
+        <tr>
+          <td>1</td>
+          <td>
+            <input type="text" name="nama_1" placeholder="Nama Mahasiswa" />
+          </td>
+          <td>
+            <input
+              type="number"
+              name="nilai_1"
+              placeholder="Nilai"
+              min="0"
+              max="100"
+            />
+          </td>
+        </tr>
+        <!-- Repeat above block for students 2 to 100 -->
+        <!-- Example ending -->
+        <tr>
+          <td>100</td>
+          <td>
+            <input type="text" name="nama_100" placeholder="Nama Mahasiswa" />
+          </td>
+          <td>
+            <input
+              type="number"
+              name="nilai_100"
+              placeholder="Nilai"
+              min="0"
+              max="100"
+            />
+          </td>
+        </tr>
+      </table>
+      <br />
+      <input type="submit" value="Kirim" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>

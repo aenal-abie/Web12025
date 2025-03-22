@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- bisa method get|post -->
+   <form action="https://localhost:5500" method="get">
+        <Label>Masukan nama anda</Label>
+        <!-- name akan berumah menjadi variabel -->
+        <input type="text" name="nama">
+        <br>
+        <label>Masukan Alamat</label>
+        <input type="text" name="alamat">
+        <br>
+        <label>Masukan Email</label>
+        <input type="email" name="email">
+        <br>
+        <label>Nomor HP</label>
+        <input type="number" name="no hp">
+        <br>
+        <label>Jumlah Anggota Keluarga</label>
+        <input type="number" name="jmlhklg">
+        <br>
+        <Label>Pilih Jenis Kelamin</Label>
+        <input type="radio" name="jk" value="laki-laki"> Laki-laki
+        <input type="radio" name="jk" value="perempuan"> Perempuan
+        <br>
+        <label for="">Tanggal lahir</label>
+        <input type="date"/>
+        <br>
+        <label for="">Pilih jurusan tujan</label>
+        <input type="checkbox" name="jurusan" value="ilkom">Ilkom
+        <input type="checkbox" name="jurusan" value="TI"> TI
+        <input type="checkbox" name="jurusan" value="TS"> TSipil
+        <br>
+        <label>Alamat</label>
+        <textarea name="alamat" cols="30" rows="3"></textarea>
+        <br>
+        <label >Pekerjaan orang tua</label>
+        <select name="pekerjaan_ortu">
+            <option value="PNS">Pegawai negri sipil</option>
+            <option value="Swasta">Swasta</option>
+            <option value="Pensiunan">Pensiunan</option>
+            <option value="Wiraswasta">Wiraswasta</option>
+            <option value="TNI/Polri">TNI/Polri</option>
+            <option value="Pengusaha">Pengusaha</option>
+            <option value="Lain-lain">Lain-lain</option>
+        </select>
+        <br>
+        <input type="submit" value="kirim">
+        <input type="reset" value="reset">
+        <button type="submit">kirim</button>
+        <button type="reset">reset</button>
+        <button type="button">kirim</button>
+   </form>
+    
+
+</body>
+</html>
